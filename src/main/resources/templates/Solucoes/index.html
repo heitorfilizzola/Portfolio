@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/HomePage/style.css}">
+    <link rel="stylesheet" th:href="@{/css/Solucoes/style.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>RVLGrupo - Soluções</title>
+</head>
+
+<body>
+<header>
+    <div class="nav_cont">
+        <div class="logo">
+            <a th:href="@{/}"><img th:src="@{/images/logo-azul.png}" alt="logo"></a>
+        </div>
+        <div class="nav_left">
+            <ul class="nav-links">
+                <li><a th:href="@{/}" data-pt="Home" data-en="Home">Home</a></li>
+                <li><a th:href="@{/institucional}" data-pt="Institucional" data-en="About">Institucional</a></li>
+                <li><a th:href="@{/solucoes}" data-pt="Soluções" data-en="Solutions" class="active">Soluções</a></li>
+                <li><a th:href="@{/contato}" data-pt="Contato" data-en="Contact">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <span class="division_line"></span>
+    </div>
+</header>
+
+<section>
+    <div class="hero_img filter">
+        <img th:src="@{/images/banner-home_solucoes.jpg}" alt="Slide 1" class="background-img" />
+        <div class="text">
+            <h2 data-pt="Nossas Soluções" data-en="Our Solutions" style="font-size: 38px;">Nossas Soluções</h2>
+            <p data-pt="Compromisso com o resultado e a eficiência, nada menos."
+               data-en="Commitment to results and efficiency, nothing less." style="font-size: 23px;">
+                Compromisso com o resultado e a eficiência, nada menos.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="toggle_list">
+    <h1 data-pt="Conheça nossos serviços" data-en="Know our services">Conheça nossos serviços:</h1>
+
+    <div class="toggle_element">
+        <button type="button" class="collapsible" data-pt="Hidrojateamento"
+                data-en="Hydrojetting">Hidrojateamento</button>
+        <span class="collapsible_line"></span>
+        <div class="content">
+            <p data-pt="O hidrojateamento de 5.000 PSI a 40.000 PSI é um método eficiente para limpeza e preparação de superfícies, garantindo remoção completa de sujeiras, incrustações e revestimentos antigos. Essa técnica melhora a aderência de novos revestimentos, proporcionando maior durabilidade e qualidade."
+               data-en="Hydroblasting at 5,000 PSI to 40,000 PSI is an efficient method for cleaning and preparing surfaces, ensuring complete removal of dirt, deposits and old coatings. This technique improves the adhesion of new coatings, providing greater durability and quality.">
+                O hidrojateamento de 5.000 PSI a 40.000 PSI é um método eficiente para limpeza e preparação de superfícies, garantindo remoção completa de sujeiras, incrustações e revestimentos antigos. Essa técnica melhora a aderência de novos revestimentos, proporcionando maior durabilidade e qualidade.
+            </p>
+            <br>
+            <p data-pt="                <b>Padrões de Hidrojato:</b><br>
+                - WJ1 Limpeza ao Substrato Nu;<br>
+                - WJ2 Limpeza Muito Minuciosa;<br>
+                - WJ3 Limpeza Minuciosa;<br>
+                - WJ4 Limpeza Leve;" data-en=" <b>Water Jetting Standards:</b><br>
+- WJ1 Bare Substrate Cleaning;<br>
+- WJ2 Very Thorough Cleaning;<br>
+- WJ3 Thorough Cleaning;<br>
+- WJ4 Light Cleaning;">
+                Padrões de Hidrojato:
+                - WJ1 Limpeza ao Substrato Nu;
+                - WJ2 Limpeza Muito Minuciosa;
+                - WJ3 Limpeza Minuciosa;
+                - WJ4 Limpeza Leve;
+            </p>
+        </div>
+    </div>
+
+
+    <div class="toggle_element">
+        <button type="button" class="collapsible" data-pt="Jato abrasivo" data-en="Abrasive jet">Jato
+            abrasivo</button>
+        <span class="collapsible_line"></span>
+        <div class="content">
+            <p data-pt="Técnica de projeção de materiais abrasivos, como areia ou granalha, para limpeza e tratamento de superfícies metálicas, garantindo aderência para novos revestimentos."
+               data-en="Technique of projecting abrasive materials, such as sand or grit, for cleaning and treating metal surfaces, ensuring adhesion for new coatings.">
+                Técnica de projeção de materiais abrasivos, como areia ou granalha, para limpeza e tratamento de
+                superfícies metálicas, garantindo aderência para novos revestimentos.
+            </p>
+            <br>
+            <p data-pt="<b>Padrões de Jato:</b><br>
+                - Sa 1 jato ligeiro (brush-off);<br>
+                - Sa 2 jato comercial;<br>
+                - Sa 2 ¹/2 jato ao metal quase branco;<br>
+                - Sa 3 jato ao metal branco;" data-en="<b>Jet Patterns:</b><br>
+- Sa 1 brush-off;<br>
+- Sa 2 commercial jet;<br>
+- Sa 2 ¹/2 jet to near-white metal;<br>
+- Sa 3 jet to white metal;">
+                Padrões de Jato:
+                - Sa 1 jato ligeiro (brush-off)
+                - Sa 2 jato comercial
+                - Sa 2 ¹/2 jato ao metal quase branco
+                - Sa 3 jato ao metal branco
+            </p>
+        </div>
+    </div>
+
+    <div class="toggle_element">
+        <button type="button" class="collapsible" data-pt="Pintura de Bomba Air-less" data-en="Airless Pump Painting">Pintura de Bomba Air-less</button>
+        <span class="collapsible_line"></span>
+        <div class="content">
+            <p data-pt="Método de pintura que utiliza alta pressão para aplicar tinta, proporcionando acabamento uniforme e maior eficiência."
+               data-en="Painting method that uses high pressure to apply paint, providing a uniform finish and greater efficiency.">
+                Método de pintura que utiliza alta pressão para aplicar tinta,
+                proporcionando acabamento uniforme e maior eficiência.
+            </p>
+        </div>
+    </div>
+
+    <div class="toggle_element">
+        <button type="button" class="collapsible" data-pt="Pintura rolo e trincha"
+                data-en="Roller and brush painting">Pintura rolo e trincha</button>
+        <span class="collapsible_line"></span>
+        <div class="content">
+            <p data-pt="Aplicação manual de tinta utilizando ferramentas tradicionais, ideal para áreas menores ou de difícil acesso."
+               data-en="Manual application of paint using traditional tools, ideal for smaller or hard-to-reach areas.">
+                Aplicação manual de tinta utilizando ferramentas tradicionais, ideal para áreas menores ou de
+                difícil acesso.
+            </p>
+        </div>
+    </div>
+
+    <div class="toggle_element">
+        <button type="button" class="collapsible" data-pt="Tratamento Mecânico"
+                data-en="Mechanical treatment">Tratamento Mecânico</button>
+        <span class="collapsible_line"></span>
+        <div class="content">
+            <p data-pt="Processos de preparação de superfícies metálicas, com ferramentas manuais, elétricas e pneumática, para garantir qualidade e durabilidade dos revestimentos aplicados."
+               data-en="Processes for preparing metal surfaces, using manual, electric and pneumatic tools, to ensure the quality and durability of the coatings applied.">
+                Processos de preparação de superfícies metálicas, com ferramentas manuais, elétricas e pneumática, para garantir qualidade e durabilidade dos revestimentos aplicados.
+            </p>
+            <br>
+            <p data-pt="<b>Padrões de Tratamento:</b><br>
+                -St2 Escova manual, lixa de mão entre outros.<br>
+                -St3 lixadeiras elétricas e pneumática, desincrustador entre outros.<br>"
+               data-en="<b>Treatment Standards:</b><br>
+                -St2 Manual brush, hand sandpaper, among others.<br>
+                -St3 Electric and pneumatic sanders, descaler, among others.<br>">
+
+            <b>Padrões de Tratamento:</b><br>
+            St2 Escova manual, lixa de mão entre outros.<br>
+            St3 lixadeiras elétricas e pneumática, desincrustador entre outros.<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="toggle_element">
+        <button type="button" class="collapsible" data-pt="Pintura Intumescente" data-en="Intumescent paint">Pintura
+            Intumescente</button>
+        <span class="collapsible_line"></span>
+        <div class="content">
+            <p data-pt="Aplicação de revestimentos especiais que aumentam a resistência ao fogo, protegendo estruturas metálicas em ambientes industriais e navais."
+               data-en="Application of special coatings that increase fire resistance, protecting metal structures in industrial and naval environments.">
+                Aplicação de revestimentos especiais que aumentam a resistência ao fogo, protegendo estruturas
+                metálicas em ambientes industriais e navais.
+            </p>
+        </div>
+    </div>
+
+    <div class="toggle_element">
+        <button type="button" class="collapsible" data-pt="Aplicaçãode Elastômero"
+                data-en="Elastomer Application">Aplicação de Elastômero</button>
+        <span class="collapsible_line"></span>
+        <div class="content">
+            <p data-pt="Uso de materiais flexíveis e resistentes para revestimentos que oferecem proteção contra corrosão e impactos."
+               data-en="Use of flexible and resistant materials for coatings that offer protection against corrosion and impacts.">
+                Uso de materiais flexíveis e resistentes para revestimentos que oferecem proteção contra corrosão e
+                impactos.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="toggle_element">
+        <button type="button" class="collapsible" data-pt="Inspeção qualificada N-1/N-2"
+                data-en="N-1/N-2 qualified inspection">Inspeção qualificada N-1/N-2</button>
+        <span class="collapsible_line"></span>
+        <div class="content">
+            <p data-pt="Avaliação técnica realizada por profissionais certificados para garantir a qualidade e conformidade dos serviços executados."
+               data-en="Technical assessment carried out by certified professionals to guarantee the quality and compliance of the services performed.">
+                Avaliação técnica realizada por profissionais certificados para garantir a qualidade e conformidade
+                dos serviços executados.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="blue_cont">
+    <div class="blue_cont_text">
+        <h2 data-pt="Estamos onde o desafio exige mais." data-en="We are where the challenge demands the most.">Estamos
+            onde o desafio exige mais.</h2>
+        <p data-pt="Do litoral às grandes estruturas industriais, a RVL Grupo está presente nos projetos que pedem precisão, agilidade e excelência. Atuamos com força nos setores naval, onshore, offshore e industrial, sempre com um só foco: entregar qualidade de verdade."
+           data-en="From the coast to large industrial structures, RVL Group is present in projects that require precision, agility and excellence. We operate strongly in the naval, onshore, offshore and industrial sectors, always with a single focus: delivering true quality.">
+            Do litoral às grandes estruturas industriais, a RVL Grupo está presente nos projetos que pedem precisão,
+            agilidade e excelência. Atuamos com força nos setores naval, onshore, offshore e industrial, sempre com um
+            só foco: entregar qualidade de verdade.
+        </p>
+        <a th:href="@{https://wa.me/+554791362346}" target="_blank" class="fale_button" data-pt="Fale conosco" data-en="Contact us">Fale conosco</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footerdiv">
+        <div class="footer_logo">
+            <a th:href="@{/}"><img th:src="@{/images/logo-azul.png}" alt="logo"></a>
+        </div>
+    </div>
+
+    <div class="contato-grid">
+        <div class="contato-endereco">
+            <p><i class="fas fa-map-marker-alt"></i><a th:href="@{https://maps.app.goo.gl/NzEtuZ7HuWDCVkZZ6}" target="_blank"> Av. Joca Brandão, 111<br>Fazenda, Itajaí - SC<br>88301-440</a></p>
+            <br>
+        </div>
+        <div class="col contato-info">
+            <p><a th:href="@{mailto:contato@rvlgrupo.com.br}"><i class="fas fa-envelope"></i> contato@rvlgrupo.com.br</a></p>
+            <p class="secondary-email"><a th:href="@{mailto:comercial@rvlgrupo.com.br}">comercial@rvlgrupo.com.br</a></p>
+        </div>
+        <div class="col numeros-info">
+            <p><i class="fas fa-phone"></i> (47)991181861</p>
+            <p><i class="fas fa-phone"></i> (47)997561861</p>
+            <p><a th:href="@{https://wa.me/+554791362346}" target="_blank"><i class="fab fa-whatsapp"></i> (47)991362346</a></p>
+        </div>
+    </div>
+</footer>
+
+
+<script th:src="@{js/Solucoes/script.js}"></script>
+</body>
+
+</html>

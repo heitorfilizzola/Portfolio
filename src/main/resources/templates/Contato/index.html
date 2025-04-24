@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RVL Grupo - Contato</title>
+    <link rel="stylesheet" th:href="@{/css/Contato/style.css}" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="nav_cont">
+        <div class="logo">
+            <a th:href="@{/}"><img th:src="@{/images/logo-azul.png}" alt="logo"></a>
+        </div>
+        <div class="nav_left">
+            <ul class="nav-links">
+                <li><a th:href="@{/}" data-pt="Home" data-en="Home">Home</a></li>
+                <li><a th:href="@{/institucional}" data-pt="Institucional" data-en="About">Institucional</a></li>
+                <li><a th:href="@{/solucoes}" data-pt="Soluções" data-en="Solutions">Soluções</a></li>
+                <li><a th:href="@{/contato}" data-pt="Contato" data-en="Contact" class="active">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <span class="division_line"></span>
+    </div>
+</header>
+
+<section class="hero">
+    <h1 data-pt="Seu próximo projeto começa aqui" data-en="Your next project starts here">Seu próximo projeto começa aqui</h1>
+    <p data-pt="Não importa o tamanho do desafio — estamos prontos para ouvir, planejar e executar com excelência. Fale com a RVL Grupo e dê o primeiro passo para um resultado de alto nível." data-en="No matter the size of the challenge — we are ready to listen, plan, and execute with excellence. Speak with RVL Group and take the first step toward high-level results.">
+        Não importa o tamanho do desafio — estamos prontos para ouvir, planejar e executar com excelência. Fale com a RVL Grupo e dê o primeiro passo para um resultado de alto nível.
+    </p>
+</section>
+
+<section class="contato">
+    <span class="collapsible_line"></span><br>
+    <div class="contato-container">
+        <div class="contato-grid">
+            <div class="col contato-info">
+                <p><a th:href="@{mailto:contato@rvlgrupo.com.br}"><i class="fas fa-envelope"></i> contato@rvlgrupo.com.br</a></p>
+                <p class="secondary-email"><a th:href="@{mailto:comercial@rvlgrupo.com.br}">comercial@rvlgrupo.com.br</a></p>
+            </div>
+            <div class="col numeros-info">
+                <p><i class="fas fa-phone"></i> (47)991181861</p>
+                <p><i class="fas fa-phone"></i> (47)997561861</p>
+                <p><a th:href="@{https://wa.me/+554791362346}" target="_blank"><i class="fab fa-whatsapp"></i> (47)991362346</a></p>
+            </div>
+        </div>
+        <div class="contato-endereco">
+            <p><i class="fas fa-map-marker-alt"></i><a th:href="@{https://maps.app.goo.gl/NzEtuZ7HuWDCVkZZ6}" target="_blank" data-pt="Av. Joca Brandão, 111 Fazenda, Itajaí - SC 88301-440" data-en="Av. Joca Brandão, 111 Fazenda, Itajaí - SC 88301-440">Av. Joca Brandão, 111<br>Fazenda, Itajaí - SC<br>88301-440</a></p>
+            <br>
+        </div>
+    </div>
+    <span class="collapsible_line"></span><br>
+    <div class="footer-logo">
+        <img th:src="@{/images/logo-azul.png}" alt="logo">
+    </div>
+</section>
+
+<script th:src="@{/js/Contato/script.js}"></script>
+</body>
+</html>

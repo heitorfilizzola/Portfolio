@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RVLGrupo - Institucional</title>
+    <link rel="stylesheet" th:href="@{/css/Institucional/style.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+    <div class="nav_cont">
+        <div class="logo">
+            <a th:href="@{/}"><img th:src="@{/images/logo-azul.png}" alt="logo"></a>
+        </div>
+        <div class="nav_left">
+            <ul class="nav-links">
+                <li><a th:href="@{/}" data-pt="Home" data-en="Home">Home</a></li>
+                <li><a th:href="@{/institucional}" data-pt="Institucional" data-en="About" class="active">Institucional</a></li>
+                <li><a th:href="@{/solucoes}" data-pt="Soluções" data-en="Solutions">Soluções</a></li>
+                <li><a th:href="@{/contato}" data-pt="Contato" data-en="Contact">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+    <div style="width: 100%;">
+        <span class="division_line"></span>
+    </div>
+</header>
+<section class="institucional-banner">
+    <div class="banner-content">
+        <div class="banner-logos">
+            <img th:src="@{images/logo-branco.png}" alt="logo-branco">
+<!--            <img th:src="@{images/logo-branco2.png}">-->
+        </div>
+        <div class="banner-text">
+        <p data-pt="Construindo hoje, <b>com os olhos no amanhã.</b>" data-en="Building today, <b>with eyes on tomorrow.</b>">Construindo hoje, <b>com os olhos no amanhã.</b></p>
+        </div>
+        </div>
+</section>
+
+<section class="about">
+    <div class="text">
+        <h2 data-pt="Uma trajetória em evolução" data-en="A trajectory in evolution">Uma trajetória em evolução</h2><br>
+        <p data-pt="Desde 2019, a RVL GRUPO constrói sua história com força e estilo." data-en="Since 2019, RVL GRUPO has been building its history with strength and style.">Desde 2019, a RVL GRUPO constrói sua história com força e estilo.</p>
+        <p data-pt="Somos especialistas em tratamento de superfícies e pintura, combinando precisão técnica e paixão pelo detalhe. Nosso horizonte é o Brasil inteiro, com raízes em Itajaí, navegamos pelos mares e indústrias, seja onshore ou offshore." data-en="We are specialists in surface treatment and painting, combining technical precision and passion for detail. Our horizon is the whole of Brazil, with roots in Itajaí, we sail the seas and industries, whether onshore or offshore.">Somos especialistas em tratamento de superfícies e pintura, combinando precisão técnica e paixão pelo detalhe. Nosso horizonte é o Brasil inteiro, com raízes em Itajaí, navegamos pelos mares e indústrias, seja onshore ou offshore.</p>
+        <br>
+        <p data-pt="Mais do que aplicar camadas, protegemos estruturas, valorizamos o que foi construído e potencializamos o que está por vir." data-en="More than applying layers, we protect structures, value what has been built and enhance what is to come."><strong>Mais do que aplicar camadas, protegemos estruturas, valorizamos o que foi construído e potencializamos o que está por vir.</strong> </p>
+        <p data-pt="Com uma equipe altamente qualificada, entregamos performance com propósito: encantar, superar expectativas e servir com excelência." data-en="With a highly qualified team, we deliver performance with purpose: to delight, exceed expectations and serve with excellence.">Com uma equipe altamente qualificada, entregamos performance com propósito: encantar, expextativas e servir com excelência.</p>
+    </div>
+</section>
+
+<section class="valores">
+    <h2 class="titulo" data-pt="Superar desafios é o que nos move" data-en="Overcoming challenges is what drives us">Superar desafios é o que nos move</h2>
+    <p class="subtitulo" data-pt="Somos especialistas em fazer bem feito. Onde há desafio, entregamos resultado com precisão, agilidade e respeito. Aqui, qualidade não é diferencial — é padrão." data-en="We specialize in doing things right. Where there is a challenge, we deliver results with precision, agility, and respect. Here, quality is not a differentiator — it's the standard.">
+        Somos especialistas em fazer bem feito. Onde há desafio, entregamos resultado com precisão, agilidade e respeito. Aqui, qualidade não é diferencial — é padrão.
+    </p>
+
+    <div class="carousel_container">
+        <button class="arrow left">&#10094;</button>
+        <div class="solutions-carousel-wrapper">
+            <div class="solutions-carousel">
+                <div class="solution"> <h3 data-pt="Excelência não é meta, é prática diária." data-en="Excellence is not a goal, it's daily practice.">Excelência não é meta, é prática diária.</h3> <p data-pt="Buscamos resultados superiores em cada detalhe, com foco total na performace." data-en="We aim for superior results in every detail, with total focus on performance.">Buscamos resultados superiores em cada detalhe, com foco total na performace.</p></div>
+
+                <div class="solution"><h3 data-pt="Gente é o que faz tudo acontecer." data-en="People are what makes it all happen.">Gente é o que faz tudo acontecer.</h3><p data-pt="Acreditamos no potencial das pessoas e no poder do respeito para gerar grandes resultados." data-en="We believe in people's potential and the power of respect to generate great results.">Acreditamos no potencial das pessoas e no poder do respeito para gerar grandes resultados.</p></div>
+
+                <div class="solution"><h3 data-pt="Profissionais preparados para entregar mais." data-en="Professionals ready to deliver more.">Profissionais preparados para entregar mais.</h3><p data-pt="Contamos com uma equipe altamente qualificada para atender as exigências de cada projeto com precisão." data-en="We have a highly qualified team to meet the requirements of each project with precision.">Contamos com uma equipe altamente qualificada para atender as exigências de cada projeto com precisão.</p></div>
+            </div>
+
+        </div>
+        <button class="arrow right">&#10095;</button>
+    </div>
+</section>
+
+
+
+<section class="parceiros">
+    <h2 data-pt="Mais que uma empresa, somos parceiros." data-en="More than a company, we are partners.">Mais que uma empresa, somos parceiros.</h2>
+    <p data-pt="Nossos clientes são grandes. E nosso compromisso é ser ainda maiores na entrega." data-en="Our clients are big. And our commitment is to be even bigger in delivery.">Nossos clientes são grandes. E nosso compromisso é ser ainda maiores na entrega.</p>
+
+    <div class="parceiros-grid">
+        <div class="parceiro-logo"><img th:src="@{/images/logotipo-clientes.png}" alt="logotipo-clientes"></div>
+    </div>
+</section>
+
+<section class="certificados">
+    <div class="certificados-container">
+        <div class="certificados-texto">
+            <h2 data-pt="Certificados da RVL Grupo" data-en="Certificates from RVL Group">Certificados da RVL Grupo</h2>
+            <p data-pt="Excelência não é destino, é rotina. A RVL Grupo é prova disso: qualificada, reconhecida e em constante evolução." data-en="Excellence is not a destination, it's routine. RVL Group proves this: qualified, recognized, and in constant evolution.">Excelência não é destino, é rotina. A RVL Grupo é prova disso: qualificada, reconhecida e em constante evolução.</p>
+            <a th:href="@{https://wa.me/+554791362346}" target="_blank" class="btn-branco" data-pt="Saiba mais" data-en="Learn more">Saiba mais</a>
+        </div>
+
+        <div class="inspection-carousel">
+            <div class="inspection-carousel__track">
+                <div class="inspection-item card-left"><p id="card-left" data-pt="Inspeções qualificadas N1 e N2" data-en="Qualified inspections N1 and N2">Inspeções qualificadas N1 e N2 </p></div>
+                <div class="inspection-item inspection-item--active"> <p id="card-center" data-pt="Normas ABNT" data-en="ABNT standards"> Normas ABNT </p></div>
+                <div class="inspection-item card-right"><p id="card-right" data-pt="Inspeções qualificadas NACE" data-en="NACE qualified inspections">Inspeções qualificadas NACE </p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    <div class="footerdiv">
+        <h2 data-pt="Estamos prontos para atender você" data-en="We are ready to serve you">Estamos prontos para atender você</h2>
+        <a th:href="@{https://wa.me/+554791362346}" class="fale_button" data-pt="Fale conosco" data-en="Contact us">Fale conosco</a>
+        <div class="footer_logo">
+            <a th:href="@{/}"><img th:src="@{/images/logo-azul.png}" alt="logo"></a>
+        </div>
+    </div>
+
+    <div class="contato-grid">
+        <div class="contato-endereco">
+            <p><i class="fas fa-map-marker-alt"></i><a th:href="@{https://maps.app.goo.gl/NzEtuZ7HuWDCVkZZ6}" target="_blank"> Av. Joca Brandão, 111<br>Fazenda, Itajaí - SC<br>88301-440</a></p>
+            <br>
+        </div>
+        <div class="col contato-info">
+            <p><a th:href="@{mailto:contato@rvlgrupo.com.br}"><i class="fas fa-envelope"></i> contato@rvlgrupo.com.br</a></p>
+            <p class="secondary-email"><a th:href="@{mailto:comercial@rvlgrupo.com.br}">comercial@rvlgrupo.com.br</a></p>
+        </div>
+        <div class="col numeros-info">
+            <p><i class="fas fa-phone"></i> (47)991181861</p>
+            <p><i class="fas fa-phone"></i> (47)997561861</p>
+            <p><a th:href="@{https://wa.me/+554791362346}" target="_blank"><i class="fab fa-whatsapp"></i> (47)991362346</a></p>
+        </div>
+    </div>
+</footer>
+
+<script th:src="@{/js/Institucional/script.js}"></script>
+</body>
+</html>

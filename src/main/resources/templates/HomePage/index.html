@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RVL Grupo</title>
+  <link rel="stylesheet" th:href="@{/css/HomePage/style.css}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="nav_cont">
+    <div class="logo">
+      <a th:href="@{/}"><img th:src="@{/images/logo-azul.png}" alt="logo"></a>
+    </div>
+    <div class="nav_left">
+      <ul class="nav-links">
+        <li><a th:href="@{/}" data-pt="Home" data-en="Home" class="active">Home</a></li>
+        <li><a th:href="@{/institucional}" data-pt="Institucional" data-en="About">Institucional</a></li>
+        <li><a th:href="@{/solucoes}" data-pt="Soluções" data-en="Solutions">Soluções</a></li>
+        <li><a th:href="@{/contato}" data-pt="Contato" data-en="Contact">Contato</a></li>
+        <li><div class="lang-switch">
+          <img th:src="@{/images/br.jpg}" alt="Português" onclick="setLanguage('pt')">
+          <img th:src="@{/images/us.png}" alt="English" onclick="setLanguage('en')">
+        </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div style="width: 100%;">
+    <span class="division_line"></span>
+  </div>
+</header>
+
+<!-- Carrossel principal -->
+<section class="carousel" id="main-carousel">
+  <!-- imagem 1 do carrosel lembrar de colocar imagem sem copyright -->
+  <div class="slide filter active">
+    <img th:src="@{/images/banner-home.jpg}" alt="Slide 1" class="background-img" />
+    <div class="text">
+      <h2 data-pt="Inovação, excelência e qualidade para seus projetos." data-en="Innovation, excellence and quality for your projects.">
+        Inovação, excelência e qualidade para seus projetos.
+      </h2>
+      <a href="#" class="btn fa-greater-than" data-pt="  Saiba mais " data-en="  Learn more">  Saiba mais</a>
+    </div>
+  </div>
+
+  <!-- imagem 2 do carrosel lembrar de colocar imagem sem copyright -->
+  <div class="slide filter">
+    <img th:src="@{/images/banner-home2.jpg}" alt="Slide 2" class="background-img" />
+    <div class="text">
+      <h2 data-pt="Nossos Serviços" data-en="Our Services">Nossos Serviços</h2>
+      <p data-pt="O amplo portfólio de serviços permite que a RVL Grupo disponibilize as melhores soluções para seus clientes, diminuindo custos e aumentando a eficiência." data-en="The broad portfolio of services allows RVL Grupo to provide the best solutions for its customers, reducing costs and increasing efficiency.">
+        O amplo portfólio de serviços permite que a RVL Grupo disponibilize as melhores soluções para seus clientes, diminuindo custos e aumentando a eficiência.
+      </p>
+      <a href="#" class="btn fa-greater-than" data-pt="  Conheça nossas soluções" data-en="  Discover our solutions">Conheça nossas soluções</a>
+    </div>
+  </div>
+
+  <!-- imagem 3 do carrosel lembrar de colocar imagem sem copyright -->
+  <div class="slide filter">
+    <img th:src="@{/images/banner-home_solucoes.jpg}" alt="Slide 3" class="background-img" />
+    <div class="text">
+      <h2 data-pt="Agende uma conversa" data-en="Schedule a conversation">Agende uma conversa</h2>
+      <p data-pt="Estamos prontos para te oferecer a solução que você precisa." data-en="We are ready to offer you the solution you need.">
+        Estamos prontos para te oferecer a solução que você precisa.
+      </p>
+      <a href="#" class="btn fa-greater-than" data-pt="  Fale conosco" data-en="  Talk to us">Fale conosco</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Quem somos -->
+<section class="about">
+  <div class="text">
+    <h2 data-pt="Quem somos" data-en="About us">Quem somos</h2>
+    <h3 data-pt="Inovação, excelência e qualidade para seus projetos." data-en="Innovation, excellence and quality for your projects.">
+      Inovação, excelência e qualidade para seus projetos.
+    </h3>
+    <p data-pt="Somos especializados em serviços de tratamento de superfícies e pintura para o mercado naval (onshore e offshore) e industrial em geral. Com sede em Itajaí, Santa Catarina, atuamos em todo o território nacional: focamos em soluções que garantem qualidade e desempenho nacional excepcionais."
+       data-en="We specialize in surface treatment and painting services for the naval (onshore and offshore) and general industrial markets. Headquartered in Itajaí, Santa Catarina, we operate throughout Brazil, focusing on solutions that ensure quality and outstanding national performance.">
+      Somos especializados em serviços de tratamento de superfícies e pintura para o mercado naval
+      (onshore e offshore) e industrial em geral. Com sede em Itajaí, Santa Catarina, atuamos em todo
+      o território nacional: focamos em soluções que garantem qualidade e desempenho nacional excecionais.
+    </p>
+    <a th:href="@{/institucional}" class="btn dark fa-greater-than" data-pt="  Conheça a RVL Grupo" data-en="  Meet RVL Group">Conheça a RVL Grupo</a>
+  </div>
+
+  <div class="text-right">
+    <img th:src="@{/images/quem-somos.jpg}" alt="Navio" />
+  </div>
+</section>
+<!-- Soluções -->
+<section class="solutions">
+  <div class="texts_solutions">
+    <p data-pt="Nossas soluções" data-en="Our Solutions">Nossas soluções</p>
+    <h2 data-pt="Compromisso com eficiência e qualidade." data-en="Commitment to efficiency and quality.">
+      Compromisso com eficiência e qualidade.
+    </h2>
+  </div>
+
+
+
+
+  <div class="carousel_container">
+    <button class="arrow left">&#10094;</button>
+    <div class="solutions-carousel-wrapper">
+      <div class="solutions-carousel">
+        <div class="solution"> <p data-pt="Hidrojato" data-en="Hydrojet">Hidrojato</p></div>
+
+        <div class="solution"><p data-pt="Pintura Air-less" data-en="Airless Painting">Pintura Air-less</p></div>
+
+        <div class="solution"><p data-pt="Inspeção qualificada N1 e N2" data-en="Qualified Inspection N1 and N2">Inspeção qualificada N1 e N2</p></div>
+
+        <div class="solution active"><p data-pt="Tratamento Mecânico" data-en="Mechanical Tratment">Tratamento Mecânico</p></div>
+        <div class="solution"><p data-pt="Tratamento de superfície" data-en="Surface Treatment">Tratamento de superfície</p></div>
+        <div class="solution"><p data-pt="Jateamento abrasivo" data-en="Abrasive Blasting">Jateamento abrasivo</p></div>
+
+      </div>
+
+    </div>
+    <button class="arrow right">&#10095;</button>
+  </div>
+
+  </div>
+
+  <a th:href="@{solucoes}" class="btn dark" data-pt="Ver todos os serviços" data-en="See all services">
+    Ver todos os serviços
+  </a>
+</section>
+
+
+
+<footer>
+  <div class="footerdiv">
+    <div class="footer_logo">
+      <a th:href="@{/}"><img th:src="@{/images/logo-azul.png}" alt="logo"></a>
+    </div>
+  </div>
+
+  <div class="contato-grid">
+    <div class="contato-endereco">
+      <p><i class="fas fa-map-marker-alt"></i><a th:href="@{https://maps.app.goo.gl/NzEtuZ7HuWDCVkZZ6}" target="_blank"> Av. Joca
+        Brandão, 111<br>Fazenda, Itajaí - SC<br>88301-440</a></p>
+      <br>
+    </div>
+    <div class="col contato-info">
+      <p><a th:href="@{mailto:contato@rvlgrupo.com.br}"><i class="fas fa-envelope"></i> contato@rvlgrupo.com.br</a></p>
+      <p class="secondary-email"><a th:href="@{mailto:comercial@rvlgrupo.com.br}">comercial@rvlgrupo.com.br</a></p>
+    </div>
+    <div class="col numeros-info">
+      <p><i class="fas fa-phone"></i> (47)991181861</p>
+      <p><i class="fas fa-phone"></i> (47)997561861</p>
+      <p><a th:href="@{https://wa.me/+554791362346}" target="_blank"><i class="fab fa-whatsapp"></i> (47)991362346</a></p>
+    </div>
+  </div>
+</footer>
+
+
+<script th:src="@{/js/HomePage/script.js}"></script>
+</body>
+</html>
