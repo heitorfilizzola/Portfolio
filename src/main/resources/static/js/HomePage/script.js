@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Página carregada e script.js ativo');
 
     // === Tradução ===
     function setLanguage(lang) {

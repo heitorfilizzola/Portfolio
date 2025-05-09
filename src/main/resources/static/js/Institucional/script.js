@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Página com collapsible carregada');
 
 // === Tradução ===
     function setLanguage(lang) {
