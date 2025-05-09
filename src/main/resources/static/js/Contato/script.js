@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Página de contatos carregada');
 
     // === Tradução ===
     function setLanguage(lang) {
